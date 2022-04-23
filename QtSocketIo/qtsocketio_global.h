@@ -1,0 +1,12 @@
+#ifndef QTSOCKETIO_GLOBAL_H
+#define QTSOCKETIO_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(QTSOCKETIO_LIBRARY)
+#  define QTSOCKETIOSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define QTSOCKETIOSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QTSOCKETIO_GLOBAL_H

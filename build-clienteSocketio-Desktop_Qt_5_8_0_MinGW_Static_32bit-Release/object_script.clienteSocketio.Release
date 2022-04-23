@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\echoclient.o
+./release\paintwebsocket.o
+./release\scribblearea.o
+./release\clientesocketio_plugin_import.o
+./release\moc_mainwindow.o
+./release\moc_echoclient.o
+./release\moc_paintwebsocket.o
+./release\moc_scribblearea.o
+);

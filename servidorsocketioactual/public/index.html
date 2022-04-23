@@ -1,0 +1,44 @@
+<html>
+	<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+		$(function() {
+
+			console.log("hola mundo");
+
+			var socket = io.connect("http://192.168.1.96:3060");
+
+			socket.emit('REG',"hola desde la web");
+
+		});
+	</script>
+	</head>
+	<body>
+		<button onclick="myFunction()">Click me</button>
+
+			<p id="demo"></p>
+
+			<script>
+			
+/*
+			console.log("hola mundo");
+
+			//var socket = io();
+
+			var socket = io.connect("http://192.168.1.96:3060");
+
+			
+
+			function myFunction() {
+  				document.getElementById("demo").innerHTML = "Hello World";
+  				socket.emit('REG',"hola desde la web");
+			}
+*/
+			
+			</script>
+
+		
+	</body>
+
+</html>
